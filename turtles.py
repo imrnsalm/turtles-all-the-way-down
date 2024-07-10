@@ -33,11 +33,32 @@ from random import randrange
 # 	t1.rt(y)
 # 	t2.rt(y/2)
 
-'''
- Plot a tinkerbell map.
-'''
+# '''
+#  Plot a tinkerbell map.
+# '''
 
-def chua_circuit():
-    mainloop()
+# def chua_circuit():
+#     mainloop()
 
-chua_circuit()
+# chua_circuit()
+
+Screen().bgcolor("black")
+
+world_turtle = Turtle()
+
+world_turtle.begin_fill()
+
+world_turtle.color("light yellow")
+
+world_turtle.pensize(10)
+
+world_turtle.left(45)
+world_turtle.forward(105)
+
+for i in range(3):
+    world_turtle.left(90)
+    world_turtle.forward(105)
+
+world_turtle.end_fill()
+
+mainloop()
